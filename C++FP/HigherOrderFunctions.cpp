@@ -17,11 +17,6 @@ const int four_to_five[] = {4, 5, 6};
 const int unordered_one_to_five[] = {2, 2, 3, 4, 3, 5, 1, 1, 5};
 const int size_of_uo = sizeof(unordered_one_to_five) / sizeof(int);
 
-int double_int(int x)
-{
-  return x * 2;
-}  
-
 void twice(int* xs, int size)
 {
   transform(xs, xs + size,
