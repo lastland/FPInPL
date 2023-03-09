@@ -1,5 +1,5 @@
 package edu.pdx;
 
-public interface Tree<A extends Comparable> {
-    public Tree<A> insert(A v);
+public interface Tree<A extends Comparable<? super A>> {
+    public void insert(A v);
 }

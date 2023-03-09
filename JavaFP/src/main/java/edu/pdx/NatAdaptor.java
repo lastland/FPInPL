@@ -16,6 +16,7 @@ public class NatAdaptor implements Comparable<NatAdaptor> {
         return compare(n, x.getN());
     }
 
+    // Alternatively, implement using the visitor pattern
     static private int compare(Nat x, Nat y) {
         if (x == NatFactory.Z()) {
             if (y == NatFactory.Z())

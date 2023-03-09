@@ -15,5 +15,10 @@ public class Main
         NatAddVisitor v = new NatAddVisitor();
         System.out.println(zero.accept(v).apply(two)); // Expecting two
         System.out.println(two.accept(v).apply(two));  // Expecting four
+                                                       
+        Tree<NatAdaptor> t = new Node<NatAdaptor>(new NatAdaptor(one));
+        t.insert(new NatAdaptor(zero));
+        t.insert(new NatAdaptor(two));
+        System.out.println(t);
     }
 }
